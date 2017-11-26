@@ -1,0 +1,57 @@
+* {
+  /*Change the margin and padding on the entire document to 0px;*/
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  /*Change the background color to light grey so that we can differentiate between
+  "nav" and "body" on the page*/
+  background-color: #eee;
+}
+
+nav {
+  /*Match the width of the navigation with the width of the browser.*/
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+}
+
+ul li {
+  /*Remove the Bullet Points with the List*/
+  list-style: none;
+
+  /*display: inline-block;*/
+
+  /*Remove the extra space between each list item*/
+  float: left;
+
+  /*Set the line height to 100px to match the "nav" element height*/
+  line-height: 100px;
+}
+
+ul li a {
+  /*This propertly streches the height of the anchor tag to match with the list item
+  height so that it can be clickable. Without this, you will notice the hover effect
+  only when you will move the mouse cursor over the text and with this property
+  you will notice that the hover effect is also applicable even when you hover
+  any where within the achor element area.*/
+  display: block;
+
+  /*Remove the default underline in the anchor tag.*/
+  text-decoration: none;
+  font-size: 14px;
+  font-family: arial;
+
+  /*Change the color to dark grey.*/
+  color: #1e1e1e;
+
+  /*Apply 0px top, bottom padding and 20px left and right padding.*/
+  padding: 0 20px;
+}
+
+/*Override the color property of the anchor tag to red. It will show the red color when
+cursor is moved over the anchor tag.*/
+ul li a:hover {
+  color: red;
+}
